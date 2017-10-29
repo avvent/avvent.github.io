@@ -1,0 +1,21 @@
+body, html{margin: 0px; padding: 0px; overflow: hidden;}
+
+
+
+
+#navigatorContainer{
+	position: fixed;
+	bottom: 10px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+#navigator{
+	margin: auto;
+}
+.dropdown.icon{
+	transform: rotateZ(180deg);
+}
+.ui.modal{
+	color: black;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+
+
+<script src="Javascript/OrbitControls.js"></script>
+<script src="Javascript/Basic_Script.js"></script>
+<script src="Javascript/Background_Setup.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="Css/Basic_Style.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+
+
+	<title>Avvent</title>
+</head>
+<body onclick="$('.ui.sidebar').sidebar('toggle');">
+
+
+<div id="navigatorContainer">
+	<div class="ui stackable menu compact" id="navigator">
+		<a class="item" onclick="GoToCenter(dot0.x,dot0.y,dot0.z,0); GoToModal('crd0');">
+			Notice
+		</a>
+		<a class="ui pointing dropdown item">
+			The Plan
+			<i class="dropdown icon"></i>
+			<div class="menu">
+				<div class="item" onclick="GoToCenter(dot6.x,dot6.y,dot6.z,6); GoToModal('crd6');">Basic Overview</div>
+			</div>
+		</a>
+		<a class="ui pointing dropdown item">
+			Our System
+			<i class="dropdown icon"></i>
+			<div class="menu">
+				<div class="item disabled">The Theory</div>
+				<div class="divider"></div>
+				<div class="item disabled">Perceiving</div>
+				<div class="item disabled">Judging</div>
+				<div class="item disabled">Attitude</div>
+				<div class="divider"></div>
+				<div class="item disabled">The Data</div>
+				<div class="item disabled">Add-ons</div>
+			</div>
+		</a>
+		<a class="item disabled">
+			More
+		</a>
+	</div>
+</div>
+<div id="3D_Space" class="pusher"></div>
+
+
+<div class="ui basic modal" id="crd0">
+	<div class="ui centered card ">
+			<div class="content actions">
+				<div class="header center aligned">
+				<div class="ui red right corner label" onclick="GoToOrigin(dot0.x,dot0.y,dot0.z,0);$('#crd0').modal('hide');"><i class="remove circle icon" ></i></div>
+					Notice
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="description center aligned">The website is currently under construction and therefore lacks major site features. We are in the process of designing the website so it can function without any problems on mobile and desktop devices.</div>
+			</div>
+
+			<div class="extra content center aligned">
+				<div>For more information contact:</div>
+				<div>Stephanburger54@gmail.com</div>
+
+			</div>
+	</div>
+</div>
+
+<div class="ui basic long modal" id="crd1" style="color: black;">
+	<div class="ui piled segment">
+		<h2 class="ui centered aligned header">Perceiving</h2>
+	</div>
+</div>
+
+<div class="ui basic long modal" id="crd6" style="color: black;">
+	<div class="ui piled segment">
+		<div class="ui red right corner label" onclick="GoToOrigin(dot6.x,dot6.y,dot6.z,6);$('#crd6').modal('hide');"><i class="remove circle icon" ></i></div>
+		<h2 class="ui centered aligned header">Basic plan overview</h2>
+		<a class="ui red ribbon label">pNous</a>
+		<p></p><p>We have created a new system that changes the way we look at humans. pNous is a project that plans to improve the lives of people by releasing applications and building hubs where people can improve the way they take in information and make decisions.</p><p></p>	
+
+		<a class="ui red ribbon label">Background</a>
+		<p></p><p>We have done extensive research on the way we look at intelligence and the works of many psychologists. After almost a year and a half of research we noticed patterns that emerged during our research and created a system that defines a human. We conducted experiments with a controlled group of students and found our data to be consistent and correlate with the respected fields we tested. Then came the idea that we can use this new system to help improve the lives of countless people.</p><p></p>
+
+		<a class="ui red ribbon label">The Information Part</a>
+		<p></p><p>The first step we would like to take is to improve the average students grades. Students are the future and it is our intend to empower students by teaching them how they best take in information and can improve on their weaker way of taking it in. We also want to show educators how to present the information in a way that all students can understand. The way we will be doing this is by releasing applications for both students and educators.</p><p></p>
+
+		<div class="ui negative message">
+			<div class="header">Keep In Mind</div>
+			<p>This is just a basic overview of the first steps we will be taking.</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
