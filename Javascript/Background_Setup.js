@@ -95,7 +95,7 @@ $(document).ready(function init() {
 	controls = new THREE.OrbitControls( camera, renderer.domElement );
 
 	animate();
-	generateParticles(1000000);
+	generateParticles(80);
 });
 
 /*Update the engine*/
